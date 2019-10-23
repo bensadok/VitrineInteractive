@@ -7,3 +7,22 @@ body {
   margin: 0 0 60px;
 }
 
+#main{
+  position: absolute;
+margin-left: 50px;
+}
+
+
+#child{
+    position :element(#main);
+    transform: translateY(100%);
+}
+
+#child2{
+    position :element(#main);
+    transform: translateY(100%);
+}
+
+#child3{
+
+}
