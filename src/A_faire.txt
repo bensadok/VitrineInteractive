@@ -1,0 +1,41 @@
+Display l'image
+
+Rapidement :
+
+Créer le .js
+
+- Regarder pour l'animation 3 comment la réafficher
+
+- Maquetage comme on le choisi
+
+- Rendre les boutons non cliquables quand invisible puis cliquables
+
+-Stocker l'animation pour la desactiver plus tard ou simplement "animer dans l'autre sens"
+
+-Enlever les childs si on ne fait rien pendant X secondes
+
+- Texte Image Video recuperer doivent etre en fonction de l'ID du bouton pick (actuellement en dur)
+
+
+- Manipulation de l'arbre pour que les elements ne soient pas "invisible" mais ne sont simplement pas créer
+
+
+- Designer les boutons
+
+- Mettre une image à la place du bouton main
+
+
+Dupliquer le block :
+<div>
+  btn main
+  <div>
+  x - child
+  </div>
+  </div>
+autant de fois que necessaire pour correspondre au design choisi
+Design patern ?
+
+
+Plus tard :
+
+Créer plusieur layout pre defini pour 6 / 8 / 10 / 12 / X element dans la vitrine
