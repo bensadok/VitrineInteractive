@@ -1,0 +1,44 @@
+button{
+  border: 1px solid black;
+  font-weight: bold;
+  font-size: 1.7em;
+  cursor: pointer;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin-top : 10px;
+  margin : 200px;
+}
+
+
+
+
+@keyframes angry-animation {
+  0%{
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  60%{
+    opacity: 1;
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+  }
+  80%{
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  100%{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+button.anim1{
+  animation-name: angry-animation;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}

@@ -1,5 +1,5 @@
-var displayed = false;
- document.getElementById('main').addEventListener('click', function() {
+/*var displayed = false;
+ document.getElementByClassName('main').addEventListener('click', function() {
    if(displayed==false){
      TweenMax.to('.child', 1, {opacity: 1, delay: 0.5});
      TweenMax.to('.panel', 1.5, {scaleY: 1, height:'100vh', ease: Circ.easeOut });
@@ -34,3 +34,34 @@ var displayed = false;
    TweenMax.to('.images', 1, {opacity: 0, delay:0});
      TweenMax.to('p', 1, {opacity: 0, delay:0});
  })
+*/
+
+
+
+
+function animate(nb_box){
+  var displayed = false;
+
+
+  //var btn_main = ["c1","c2","c3","c4","c5","c6","c7","c8","c9","c10"];
+  nbboxtotal = nb_box;
+  var btn_main = [];
+  for(var i = 0; i< nbboxtotal;i++){
+    btn_main.push("c".concat(i));
+  }
+  btn_main.forEach(function(item, index, array) {
+
+   document.getElementById(item).addEventListener('click', function() {
+     var x = ".".concat(item);
+     console.log(x);
+     if(displayed==false){
+       TweenMax.to(x, 1, {opacity: 1, delay: 0.5});
+       displayed =true;
+     }
+     else{
+       TweenMax.to(x, 1, {opacity:0, delay: 0.5});
+       displayed = false;
+     }
+   });
+  });
+}

@@ -14,9 +14,7 @@ h1 {
   line-height: 1em;
 }
 
-p{
-  opacity : 0;
-}
+
 
 button{
   background-color: grey;
@@ -51,11 +49,8 @@ button.child1,button.child2,button.child3,button.child4 {
 .panel {
   width:48%;
   max-width: 48%;
-  min-width: 48%;
-  height: 25%;
-  min-height: : 25%;
-  max-height: 25%;
-
+  height: 25%
+  background: #EAEAEA;
   display:inline;
   float:left;
 
@@ -64,14 +59,13 @@ button.child1,button.child2,button.child3,button.child4 {
 
 
 
-#horizontale_milieu .box,#horizontale_milieu .panel{
+#line2 .box,#line2 .panel{
   margin-top: 12%;
   margin-bottom: 4%;
 }
 
 
-
-#horizontale_bas .box{
+#line3 .box{
   margin-top: 10%;
   margin-bottom: 4%;
 }
@@ -105,7 +99,6 @@ width:24%;
   position : absolute;
   transform: translate(10%,10%);
   opacity: 0;
-
 }
 
 .child3{

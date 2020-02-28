@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Vitrine interactive</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="main_angrytool.css">
+</head>
+<body>
+
+<button id="c1">c1</button>
+
+
+
+
+<button id="c2">c2</button>
+
+
+<script>
+  document.getElementById('c1').addEventListener('click', function() {
+    console.log('test');
+    var c2 = document.getElementById('c2');
+    if(c2.className==='anim1'){
+      c2.classList.remove('anim1');
+    }
+    else{
+      c2.classList.add('anim1');
+    }
+  });
+</script>
+
+
+</body>
+</html>

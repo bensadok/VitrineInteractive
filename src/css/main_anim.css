@@ -1,0 +1,172 @@
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  background-color: white;
+}
+
+h1 {
+  font-size: 5em;
+  width: 25%;
+  color: red;
+  line-height: 1em;
+}
+
+
+button{
+  background-color: grey;
+}
+button.main {
+  border: 1px solid black;
+  font-weight: bold;
+  font-size: 1.7em;
+  cursor: pointer;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin-top : 10px;
+}
+
+
+button.child1,button.child2,button.child3,button.child4 {
+  border: 1px solid black;
+  font-weight: bold;
+  font-size: 1.7em;
+  cursor: pointer;
+  border-radius: 50%;
+  height: 66px;
+  width: 66px;
+  margin : 10px;
+  font-size: 12px;
+}
+
+
+
+.panel {
+  width:48%;
+  max-width: 48%;
+  height: 25%
+  background: #EAEAEA;
+  display:inline;
+  float:left;
+
+
+}
+
+
+
+#line2 .box,#line2 .panel{
+  margin-top: 12%;
+  margin-bottom: 4%;
+}
+
+
+#line3 .box{
+  margin-top: 10%;
+  margin-bottom: 4%;
+}
+
+.main{
+  height : 100px;
+  width:100px;
+}
+
+
+
+.box {
+display:inline;
+/*padding: 5px;*/
+float: left;
+width:24%;
+/*position: fixed;*/
+}
+
+.maindiv{
+  margin-left: 30%;
+}
+
+.child1{
+    position : absolute;
+    transform: translate(-120%,-30%);
+    opacity: 0;
+}
+
+.child2{
+  position : absolute;
+  transform: translate(10%,10%);
+  opacity: 0;
+}
+
+.child3{
+  position : absolute;
+  transform: translate(140%,-30%);
+  opacity: 0;
+}
+
+
+@keyframes angry-animation {
+  0%{
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  60%{
+    opacity: 1;
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+@keyframes unanimate_angry-animation {
+  0%{
+    opacity: 1;
+    -webkit-transform: perspective(400px) rotateY(0deg);
+    transform: perspective(400px) rotateY(0deg);
+  }
+  100%{
+    opacity: 0;
+    -webkit-transform: perspective(400px) rotateY(90deg);
+    transform: perspective(400px) rotateY(90deg);
+  }
+}
+
+
+
+button.not_animate{
+  animation-name: unanimate_angry-animation;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+
+button.anim1{
+  animation-name: angry-animation;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+button.anim2{
+  animation-name: angry-animation;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-delay: 0.2s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+button.anim3{
+  animation-name: angry-animation;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-delay: 0.4s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
